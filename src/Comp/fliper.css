@@ -1,0 +1,69 @@
+.card
+{
+    height: 300px;
+    width: 400px;
+    position: relative;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    border-radius: 15px;
+    overflow: hidden;
+    transition-duration: 0.4s;
+    transform-box: initial;
+    transform-style: preserve-3d;
+    font-size: 2em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:#888;
+    background-image:linear-gradient(to right,pink 25%,#ddd 50%,lightblue 25%);
+}
+
+.card  div{
+    position: absolute;
+    height: 300px;
+    width: 400px;
+    padding: 10px;
+    text-align: center;
+}
+
+.card p{
+background-color: ivory;
+border-radius: 5px;
+}
+
+.card .face{
+z-index: 2;
+background-color: lightblue;
+transition-timing-function: ease-out;
+transition-delay: 1s;
+}
+
+.back{
+z-index: 1;
+background-color: lightcoral;
+
+transform: rotateY(180deg);
+transition-timing-function: ease-in-out;
+}
+
+.card:hover{
+    transform: rotateY(180deg);
+}
+
+.card:hover .face{
+visibility: hidden;
+}
+
+.card:hover .back{
+
+    transform: rotateY(180deg);
+}
+
+.back input{
+    margin: 10px auto;
+}
+
+
+.back input .btn{
+    margin: 10px auto;
+    width:fit-content;
+}
