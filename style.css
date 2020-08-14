@@ -1,0 +1,196 @@
+body{
+    text-transform: capitalize;
+}
+
+.forme{
+    max-width: 100%;
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-color: rgba(214, 199, 199, 0.288);
+    padding: 20px;
+    border-radius: 0px;
+}
+
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .forme{
+        max-width: 70%;
+        margin: auto;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        background-color: rgb(236, 236, 236);
+        padding: 20px;
+        border-radius: 10px;
+    }
+  }
+
+@media only screen and (min-width: 1024px) {
+    /* For tablets: */
+    .forme{
+        max-width: 65%;
+        margin: auto;
+        margin-top: 70px;
+        margin-bottom: 70px;
+        background-color: rgb(243, 243, 243);
+        padding: 20px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-radius: 10px;
+    }
+  }
+
+label {
+    font-size: x-large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:rgb(41, 40, 40);
+ 
+}
+
+.form-control{
+    max-width: 62%;
+    margin: auto;
+}
+
+.about-image{
+width: 70%;
+background-color: violet;
+height: 400px;
+margin: auto;
+}
+
+.about-image > img{
+    width: 70%;
+    background-color: violet;
+    height: 300px;
+    margin: auto;
+}
+
+footer{background-color: rgb(48, 48, 53);
+color:white;}
+
+.submit-button{
+    margin: 35px;
+    padding: 10px;
+}
+ 
+.submit-button > button {
+    margin-right:70px;
+}
+
+.error{
+    font-weight: bolder;
+width:100;
+margin: auto;
+}
+
+.error::after{
+    content: '    *';
+    color:red;
+}
+
+
+.hid{
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
+
+.formerr{
+    max-width: 100%;
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-color:rgba(248, 155, 155, 0.199);
+    padding: 20px;
+    border-radius: 0px;
+    animation-name: err;
+    animation-duration:.5s;
+    animation-delay: 0s;
+}
+
+
+
+
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .formerr{
+        max-width: 70%;
+        margin: auto;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        background-color: rgb(236, 236, 236);
+        padding: 20px;
+        border-radius: 10px;
+        background-color: rgba(248, 155, 155, 0.199);
+        animation-timing-function: ease-in-out;
+        animation-name: err;
+        animation-duration:.5s;
+        animation-delay: 0s;
+    }
+  }
+
+@media only screen and (min-width: 1024px) {
+    /* For tablets: */
+    .formerr{
+        max-width: 65%;
+        margin: auto;
+        margin-top: 70px;
+        margin-bottom: 70px;
+        background-color: rgb(243, 243, 243);
+        padding: 20px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-radius: 10px;
+        background-color: rgba(248, 155, 155, 0.199);
+        animation-name: err;
+        animation-duration:.7s;
+        animation-delay: 0s;
+    }
+  }
+
+@keyframes err {
+    20%{transform: rotate(10deg);}
+    40%{transform: rotate(-10deg);}
+    60%{transform: rotate(10deg);}
+    80%{transform: rotate(-10deg);}
+    100%{transform: rotate(0deg);}
+}
+
+
+.up{
+    font-size:22px;
+    text-align: center;
+    border: 2px solid cadetblue;
+    border-radius: 50%;
+    opacity: .5;
+    width: 37px;
+    z-index: 90;
+    position:fixed;
+    left:5px;
+    bottom: 200px;
+    background-color: rgb(255, 255, 255);
+    color: cadetblue;
+}
+
+.up:hover{
+    transition-duration: .5s;
+    font-size:22px;
+    text-align: center;
+    border: 3px solid cadetblue;
+    border-radius: 50%;
+    opacity:.9;
+    width: 37px;
+    z-index: 90;
+    position:fixed;
+    left:5px;
+    bottom: 200px;
+    background-color: black;
+    color: cadetblue;
+}
+
+
+
